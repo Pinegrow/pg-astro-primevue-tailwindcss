@@ -14,6 +14,7 @@ import solidJs from '@astrojs/solid-js'
 import svelte from '@astrojs/svelte'
 import Pinegrow from '@pinegrow/astro-module'
 import AutoImportComponents from 'unplugin-vue-components/vite'
+import { PrimeVueResolver } from '@primevue/auto-import-resolver'
 import AutoImportAPIs from 'unplugin-auto-import/astro'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
@@ -93,6 +94,14 @@ export default defineConfig({
           // restartOnConfigUpdate: true,
           restartOnThemeUpdate: true,
         },
+        primevue: {
+          /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+          configPath: 'primevue.config.ts', // or file where primevue is created
+          utilities: false,
+          themePath: false, // Set to false so that Design Panel is not used
+          // restartOnConfigUpdate: true,
+          // restartOnThemeUpdate: true,
+        },
         // plugins: [
         //   {
         //     name: 'My Awesome Lib 3.0',
@@ -114,7 +123,7 @@ export default defineConfig({
         dirs: ['src/components'], // allow auto load markdown components under ./src/components/
         extensions: ['vue', 'md'], // allow auto import and register components used in markdown
         include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.mdx?/],
-        // resolvers: [], // Auto-import using resolvers
+        resolvers: [PrimeVueResolver()], // Auto-import using resolvers
         dts: 'components.d.ts',
       }),
       Unocss({

@@ -13,7 +13,7 @@
             size="xs"
             class="ml-2"
             color="secondary"
-            to="https://github.com/pinegrow/pg-astro-tailwindcss"
+            to="https://github.com/pinegrow/pg-astro-primevue-tailwindcss"
             target="_blank"
           >
             <span>Click here</span>

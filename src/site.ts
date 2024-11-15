@@ -4,11 +4,12 @@
 
 export default {
   name: 'Vue Designer',
-  description: 'Vue Designer Astro Tailwind CSS - Quick start template',
+  description:
+    'Vue Designer Astro PrimeVue Tailwind CSS - Quick start template',
   logo: 'i-emojione-rocket',
   author: 'Pinegrow',
-  url: 'https://pg-astro-tailwindcss.netlify.app',
-  github: 'https://github.com/pinegrow/pg-astro-tailwindcss',
+  url: 'https://pg-astro-primevue-tailwindcss.netlify.app',
+  github: 'https://github.com/pinegrow/pg-astro-primevue-tailwindcss',
   defaultLocale: 'en', // default
   identity: {
     type: 'Organization',

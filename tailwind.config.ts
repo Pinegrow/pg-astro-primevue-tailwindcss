@@ -9,6 +9,7 @@ import { safelist } from './src/utils/colors'
 export default {
   darkMode: 'class',
   plugins: [
+    require('tailwindcss-primeui'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     require('@pinegrow/tailwindcss-plugin').default({

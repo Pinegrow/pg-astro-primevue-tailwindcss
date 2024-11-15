@@ -1,16 +1,16 @@
 {
-  "name": "pg-astro-tailwindcss",
+  "name": "pg-astro-primevue-tailwindcss",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://pg-astro-tailwindcss.netlify.app",
+  "homepage": "https://pg-astro-primevue-tailwindcss.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinegrow/pg-astro-tailwindcss.git"
+    "url": "https://github.com/pinegrow/pg-astro-primevue-tailwindcss.git"
   },
   "scripts": {
     "dev": "astro dev",
     "now": "npm run build && npm run preview",
-    "lighthouse": "npx unlighthouse --no-cache --site https://pg-astro-tailwindcss.netlify.app",
+    "lighthouse": "npx unlighthouse --no-cache --site https://pg-astro-primevue-tailwindcss.netlify.app",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -39,11 +39,13 @@
     "lite-youtube-embed": "^0.3.3",
     "pinia": "^2.2.6",
     "preact": "^10.24.3",
+    "primevue": "^4.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "solid-js": "^1.9.3",
     "svelte": "^4.2.19",
     "tailwindcss": "^3.4.14",
+    "tailwindcss-primeui": "^0.3.4",
     "vee-validate": "^4.14.6",
     "vue": "^3.5.12"
   },
@@ -51,7 +53,9 @@
     "@iconify/json": "^2.2.269",
     "@nuxt/eslint-config": "^0.6.1",
     "@pinegrow/astro-module": "^3.0.60",
+    "@pinegrow/primevue-plugin": "^3.0.2-beta.0",
     "@pinegrow/tailwindcss-plugin": "^3.0.32",
+    "@primevue/auto-import-resolver": "^4.2.2",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^22.9.0",
@@ -60,6 +64,7 @@
     "eslint-config-prettier": "^9.1.0",
     "npm-run-all": "^4.1.5",
     "ofetch": "^1.4.1",
+    "postcss-import": "^16.1.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "rollup-plugin-visualizer": "^5.12.0",
