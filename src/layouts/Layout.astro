@@ -1,8 +1,8 @@
 ---
 import BaseHead from '@/components/BaseHead.astro'
 
-import NavBar from '@/components/NavBar.vue'
-import TheFooter from '@/components/TheFooter.vue'
+// import NavBar from '@/components/NavBar.vue'
+// import TheFooter from '@/components/TheFooter.vue'
 import site from '@/site'
 import { heroImageUrl } from "@/utils/hero";
 
@@ -31,14 +31,14 @@ const currentPath = Astro.url.pathname
         <div
       class="min-h-screen flex flex-col bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50"
       >
-        <NavBar
+        <!-- <NavBar
           class={currentPath === '/' ? 'absolute bg-transparent z-10' : ''}
           client:load
-        />
+        /> -->
         <main class="shadow">
           <slot />
         </main>
-        <TheFooter />
+        <!-- <TheFooter /> -->
       </div>
       <!-- </div> -->
     </div>
