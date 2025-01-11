@@ -118,7 +118,7 @@ const safelistComponentAliasesMap = {
 
 const colorsAsRegex = (colors: string[]): string => colors.join('|')
 
-// eslint-disable-next-line @typescript-eslint/ban-types
+// @ts-ignore
 type ColorConfig = Exclude<TWConfig['theme']['colors'], Function>
 
 export const excludeColors = (
